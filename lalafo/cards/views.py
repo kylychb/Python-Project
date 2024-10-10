@@ -31,5 +31,10 @@ def category_get(request):
         }
     )
 
-# def item_get(request):
-#     items = Item.objects.all()
+def main_page(request):
+    items = Item.objects.all()
+    return render(
+        request,
+        "base.html",
+    {"items": items}
+    )
