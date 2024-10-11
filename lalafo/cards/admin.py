@@ -10,6 +10,7 @@ from .models import Category, Item, ItemImages, ItemParameters
 class CategoryAdmin(SortableAdminMixin, TabbedTranslationAdmin,):
     pass
 
+
 class ItemImagesInline(admin.StackedInline):
     model = ItemImages
     extra = 0
